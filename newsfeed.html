@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNIPLACE | MY PROFILE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+function saveEdits() {
+
+// the editable element
+var editElem = document.getElementById("edit");
+
+//the edited element content
+var userVersion = editElem.innerHTML;
+
+//save the content to local storage
+localStorage.userEdits = userVersion;
+
+//write a confirmation to the user
+document.getElementById("update").innerHTML="Edits saved!";
+}
+function checkEdits() {
+
+//find out if the user has previously saved edits
+if(localStorage.userEdits!=null)
+document.getElementById("edit").innerHTML = localStorage.userEdits;
+}
+
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+section {
+  font-family: Rubik;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(128, 39, 39);
+  color: white;
+  transform: rotateY(180deg);
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+
+}
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+      font-family: Rubik;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:rgb(128, 39, 39);
+  }
+  
+  .topnav a.active {
+    background-color: #b32f2f;
+    color: white;
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  .logo-text{
+top: 37px;
+font-family: Fredoka One;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 10px;
+letter-spacing: 0em;
+color:rgb(128, 39, 39)
+}
+.section{
+    font-family: Rubik;
+  
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropbtn {
+  background-color: rgb(128, 39, 39);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(128, 39, 39);
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+</style>
+</head>
+
+<body>
+    <header class="main-header">  
+        <nav class="nav"> 
+            <img src="images/uni.logo.jpg">
+            <h1 class="logo-text">UniPlace</h1>
+            <ul>
+                <div class="topnav">
+                                            <!-- Left-aligned links (default) -->
+                    <div class="topnav-centered">
+                      <a href="home.html" class="active">Home</a>
+                    </div> 
+                    <a href="SUBMIT.html">SUBMIT A NEW SERVICE!!</a>
+                                        
+                    <div class="topnav-right">
+                      <a href="PROFILE.html">MY PROFILE</a>
+                    </div>           
+                  </div>
+                  <div style="padding-left:16px">
+                  </div>
+                  </ul>
+                  </nav>
+                  </header>
+                  <h2>Search/Filter</h2>
+                  <p>Click on the button to open the dropdown menu, and use the input field to search for a specific Unipost subject.</p>
+                  
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Uniposts</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                      <a href="#Service">Service</a>
+                      <a href="#University">University</a>
+                     <a href="#City">City</a>
+                    </div>
+                  </div>
+                  <script>
+                    /* When the user clicks on the button,
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    function filterFunction() {
+                      var input, filter, ul, li, a, i;
+                      input = document.getElementById("myInput");
+                      filter = input.value.toUpperCase();
+                      div = document.getElementById("myDropdown");
+                      a = div.getElementsByTagName("a");
+                      for (i = 0; i < a.length; i++) {
+                        txtValue = a[i].textContent || a[i].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                          a[i].style.display = "";
+                        } else {
+                          a[i].style.display = "none";
+                        }
+                      }
+                    }
+                    </script>
+                    </body>
+
+<section>
