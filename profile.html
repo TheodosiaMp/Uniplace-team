@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UNIPLACE | MY PROFILE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+function saveEdits() {
+
+// the editable element
+var editElem = document.getElementById("edit");
+
+//the edited element content
+var userVersion = editElem.innerHTML;
+
+//save the content to local storage
+localStorage.userEdits = userVersion;
+
+//write a confirmation to the user
+document.getElementById("update").innerHTML="Edits saved!";
+}
+function checkEdits() {
+
+//find out if the user has previously saved edits
+if(localStorage.userEdits!=null)
+document.getElementById("edit").innerHTML = localStorage.userEdits;
+}
+
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+section {
+  font-family: Rubik;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(128, 39, 39);
+  color: white;
+  transform: rotateY(180deg);
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+
+}
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+      font-family: Rubik;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:rgb(128, 39, 39);
+  }
+  
+  .topnav a.active {
+    background-color: #b32f2f;
+    color: white;
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  .logo-text{
+top: 37px;
+font-family: Fredoka One;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 10px;
+letter-spacing: 0em;
+color:rgb(128, 39, 39)
+}
+.section{
+    font-family: Rubik;
+  
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 150px;
+  height: 100px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:rgb(255, 255, 255);
+  color: black;
+}
+
+.flip-box-back {
+  background-color: rgb(128, 39, 39);
+  color: white;
+  transform: rotateX(180deg);
+}
+</style>
+</head>
+
+<body>
+    <header class="main-header">  
+        <nav class="nav"> 
+            <img src="images/uni.logo.jpg">
+            <h1 class="logo-text">UniPlace</h1>
+            <ul>
+                <div class="topnav">
+                                            <!-- Left-aligned links (default) -->
+                    <div class="topnav-centered">
+                      <a href="home.html" class="active">Home</a>
+                    </div> 
+                    <a href="SUBMIT.html">SUBMIT A NEW SERVICE!!</a>
+                                        
+                    <div class="topnav-right">
+                      <a href="PROFILE.html">MY PROFILE</a>
+                      <a href="#chat">CHAT</a>
+                    </div>           
+                  </div>
+                  <div style="padding-left:16px">
+                  </div>
+                  </ul>
+                  </nav>
+                  </header>
+
+
+<section>
+<h1>MY PROFILE</h1>
+<h3>Touch to flip</h3>
+<p> change your information and save by clicking the buttons</p>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="data:image/jpeg;base64,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" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back"contenteditable="true">
+<input type="button" value="NAME" onclick="saveEdits()"</> <BR>
+    <div id="update"> Type your Name here</div> <br>
+<input type="button" value="UNIVERSITY DOMAIN" onclick="saveEdits()"</>
+    <div id="update"> Type your University Domain here</div> <br>
+    <input type="button" value="HOBBIES" onclick="saveEdits()"</>
+    <div id="update"> Type your Hobbies here</div> <br>
+    <input type="button" value="Some Words About me" onclick="saveEdits()"</>
+    <div id="update"> Type your Moto here</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Unipoints🤩</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2>-no points yes-🏆</h2>
+    </div>
+  </div>
+</div>
+
+  <hr>you can earn unipoints by offering survices</hr>
+
+<!-- Add font  icons -->
+<br>
+<br>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+
+
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <element class="circle"></element>
+
+           
+                  <title>UNIPLACE | HOME</title>
+        <meta name="description" content="This will be the description">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          footer {
+                              font-family: Rubik;
+                              margin: 0;
+                              
+                            }
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 24%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #b32f2f;
+          color: white;
+        }
+        
+        .containerofcard {
+          padding: 0 16px;
+        }
+        
+        .containerofcard::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .titlework {
+          color: grey;
+        }
+        
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        </style>
+    </head>
+    <body class="body">
+        <header class="main-header">  
+           
+            <nav class="nav"> 
+                
+                <img src="images/uni.logo.jpg">
+                <h1 class="logo-text">UniPlace</h1>
+                <ul>
+                    <div class="topnav">
+                                                <!-- Left-aligned links (default) -->
+                        <div class="topnav-centered">
+                          <a href="#home" class="active">Home</a>
+                        </div> 
+                        <a href="#news">News</a>
+                                            
+                        <div class="topnav-right">
+                          <a href="contact_us.html">Contact us</a>
+                          <a href="about.html">About</a>
+                        </div>           
+                      </div>
+                      <div style="padding-left:16px">
+                      </div>
+                      
+
+                          <label>
+
+                      </form>
+                      
+                      <button class='loginbut' onclick="document.getElementById('id01').style.display='block'" >Login</button>
+                      <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                      class="close" title="Close Modal">&times;</span>
+                        <form class="modal-content animate" action="/action_page.php">    
+                          <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>                  
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>                 
+                            <button type="submit" class="signup-but">Login</button>
+                            <label>
+                              <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                          </div>               
+                          <div class="container" style="background-color:#a02323">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                          </div>
+                        </form>
+                      </div>
+
+            </nav>
+            </header>
+        <section>
+            <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" data-bs-backdrop="false" data-bs-scroll="true">
+                <div class="offcanvas-header">
+                    <br>
+                    <br>
+                         
+                  <h1 class="offcanvas-title" id="offcanvasLabel">A PLACE WHERE STUDENTS ARE UNITED</h1>
+                  <a href="sign_up.html" ><button class="signup-but">Sign up</button></a>
+            </div>
+            </div>
+                         <!-- ZIC ZAC Section -->
+
+           <!--<img class="image" src="images/istockphoto-1165683016-612x612 1.jpg"> -->  
+                <!-- scroll about page-->
+           <div class="image-container1">
+            <div class="row">
+              </div>
+              <div class="column-66">
+                <h1 class="text1"><b>Connect</b></h1>
+                
+              </div>
+              <div class="column-33">
+              </div>
+            </div>
+          </div>
+          <!--edw thelei doyleia na ftiaxtei to about uniplace anderscroll-->
+          <div class="image-container2">
+            <div class='row'>
+            </div>
+              <div class="column-33">
+              </div>
+              <div class="column-66">
+                <h1 class="text2" ><b>Experience the UniServices</b></h1>
+               
+              </div>
+            </div>
+          </div>
+          <div class="image-container3">
+            <div class="row">
+              </div>
+              <div class="column-66">
+                </div>
+                <h1 class="text3" ><b>Learn</b></h1>
+               
+              </div>
+              </div>
+             <div class="image-container4">
+            <div class="row">
+              </div>
+              <div class="column-33">
+              </div>
+              <div class="column-66">
+                <h1 class="text4"><b>Earn UniPoints</b></h1>
+               
+              </div>
+            </div>
+              <br> 
+              <br>
+
+        </section>
+        <footer>
+          <div class="about-section">
+            <h1>First-time Guide</h1>
+            <p>How can I use UniPlace?</p>
+          </div>
+          
+          <h2 style="text-align:center">FOLLOW THESE STEPS FOR THE ABSOLUTE UNI-EXPERIENCE</h2>
+          <div class="roww">
+            <div class="column">
+              <div class="card">
+                <img src="https://st2.depositphotos.com/3837271/6941/i/600/depositphotos_69417709-stock-photo-text-sign-up.jpg" alt="Jane" style="width:100%">
+                <div class="containerofcard">
+                  <h2>First you have to sign up!</h2>
+                  <p class="titlework">Step 1</p>
+                  <p>By signing up you become member of the Uni-team AND only then you have access to the full Uniplace! Plus, you receive your firsts Unipoints just by signing up!! </p>
+                  <hr>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="https://storage.googleapis.com/twg-content/images/MarketingResources_Thumbnail_Search.width-1200.jpg" alt="Mike" style="width:100%">
+                <div class="containerofcard">
+                  <h2>Search for the Services you want</h2>
+                  <p class="titlework">Step 2</p>
+                  <p>After signing up and loging in, you can search for services provided by other Uni-Students near your location or anywhere you are looking forward to be. You can search services that have to do with academic stuff, hoobies or even just for fun like hanging out with a person of your age!! </p>
+                  <hr>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <img src="https://st.depositphotos.com/1004061/4861/i/600/depositphotos_48612307-stock-photo-hikers-climbing-on-mountain.jpg" alt="John" style="width:100%">
+                <div class="containerofcard">
+                  <h2>Provide services by submitting them</h2>
+                  <p class="titlework">Step 3</p>
+                  <p>When you feel ready, it's YOUR turn to help others live the beauty of the UniPlace, while giving life to our idea of the strong connection of students all around the world! And don't forget KARMA, because every time you porvide a UniService, you receive UniPoints to live a new experience in UniPlace !! </p>
+                  <hr>
+                  
+                </div>
+              </div>
+            </div>
+          
+          
+          <div class="column">
+              <div class="card">
+                <img src="https://cdn1.walsworthyearbooks.com/wyb/2019/09/05090507/Level-Up-Final-02-copy-1.jpg" alt="John" style="width:100%">
+                <div class="containerofcard">
+                  <h2>Earn & Use UniPoints</h2>
+                  <p class="titlework">Step 4</p>
+                  <p>Our App works with Unipoints and you can think it like the experience points in almost any game but with the huge diffrence that with Unipoints you can 'purchase' real life UniServices! There 3 main ways to collect UniPoints and live the UniExperience. First, you get a small amount just by signing up, but that is just the beginning because you can earn UniPoints in the most amazing way and that is by providing others with the services you can, that can be either a guitar lesson or a tour in your town or even a helping hand at a math homework! Lastly, you can always buy Unipoints when you need more. </p>
+                  <hr>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+        </footer>
+    </body>
+</html>
