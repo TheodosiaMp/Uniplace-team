@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNIPLACE | MY PROFILE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript">
+
+
+    
+    
+    
+    
+    
+    
+    
+    </script>
+	<script type="text/javascript" src="script.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+        body{
+	font-family:'Open Sans';
+    font-style:condensed;
+  background: rgb(128, 39, 39); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #f89615 0%, rgb(128, 39, 39) 50%, #4e0000 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#722020), color-stop(50%,#3b0202), color-stop(100%,#251a41)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #f89615 0%,rgb(128, 39, 39) 50%,#4e0000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #f89615 50%, rgb(128, 39, 39) 50%,#4e0000 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #f89615 0%,rgb(128, 39, 39) 50%,#4e0000 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #f89615 0%,rgb(128, 39, 39) 50%,#4e0000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2072', endColorstr='#251a41',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+a{
+	font-size: 18px;
+	font-family:'Open Sans';
+    color: white;
+    text-decoration: none;
+
+}
+
+input:focus,textarea:focus,select:focus{
+  border:1px solid #fafafa;
+  -webkit-box-shadow:0 0 6px #007eff;
+  -moz-box-shadow:0 0 5px #007eff;
+  box-shadow:0 0 5px #007eff;
+  outline: none;
+}
+
+sup{
+
+	font-size: 40px;
+}
+
+ul{
+	list-style: none;
+	font-size: 15px;
+	font-family:'Open Sans';
+	color: #9095aa;
+	padding: 0px;
+	margin: 0px;
+
+
+}
+
+
+li{
+border-bottom: 1px solid #494a5a;
+padding: 0px;
+margin: 0px;
+text-align: center;
+height: 52px;
+line-height: 52px;
+}
+
+
+#container{
+	width: 100%;
+  text-align:center;
+}
+
+.whole{
+	display: inline-block;
+  
+}
+
+
+
+.type{
+	width: 300px;
+	border-radius: 5px 5px 0px 0px;
+	background-color: #eac80d;
+	height: 62px;
+	border-bottom: 3px solid #bfa30c;
+
+}
+
+.type p{
+	font-family:'Open Sans';
+    font-weight: 800;
+	font-size: 29px;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+
+	
+
+}
+
+.plan{
+	width: 300px;
+	background-color: #2b2937;
+
+	border-radius: 0px 0px 5px 5px;
+    font-family:'Open Sans';
+    font-style:condensed;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+
+
+}
+.standard{
+	background-color: #ec6a00;
+	border-bottom: 3px solid #ec6a00;
+}
+
+.ultimate{
+	background-color: #e70a0a;
+	border-bottom: 3px solid #e70a0a;
+}
+
+
+
+.price{
+	height:80px;
+}
+
+.cart{
+  
+  color:white;
+  position: relative;
+  top: 16px;
+  
+}
+
+
+.login_c{
+  width:500px;
+  background-color:#2b2937;
+  height:300px;
+  margin: 0 auto;
+  margin-top:40px;
+  border-radius:5px;
+  
+}
+
+.login_c input{
+  width: 350px;
+height: 40px;
+  border: 1px solid #494a5a;
+  margin-bottom:20px;
+  border-radius:5px;
+  padding-left: 10px;
+
+}
+
+
+.login{
+  background-color: #BC4B1A;
+	border-bottom: 3px solid #7C3618;
+  width:100%;
+  
+}
+
+.top{
+  margin-top:35px;
+}
+
+.nodisplay{
+  opacity: 0.1;
+}
+
+.selected{
+  background-color:#1F1B36;
+  margin:0px;
+  padding:0px;
+}
+
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+      font-family: Rubik;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:rgb(128, 39, 39);
+  }
+  
+  .topnav a.active {
+    background-color: rgb(128, 39, 39);;
+    color: white;
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  /* Responsive navigation menu (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  .logo-text{
+top: 37px;
+font-family: Fredoka One;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 10px;
+letter-spacing: 0em;
+color:rgb(128, 39, 39)
+}
+
+</style>
+
+</head>
+<body>
+  <header class="main-header">  
+    <nav class="nav"> 
+        <img src="images/uni.logo.jpg">
+        <h1 class="logo-text">UniPlace</h1>
+        <ul>
+            <div class="topnav">
+                                        <!-- Left-aligned links (default) -->
+                <div class="topnav-centered">
+                  <a href="home.html" class="active">Home</a>
+                </div> 
+                <a href="SUBMIT.html">SUBMIT A NEW SERVICE!!</a>
+                                    
+                <div class="topnav-right">
+                  <a href="PROFILE.html">MY PROFILE</a>
+                  <a href="filtra.html">Postfeeed</a>
+                </div>           
+              </div>
+              <div style="padding-left:16px">
+              </div>
+              </ul>
+              </nav>
+              </header>
+
+
+<div id="container">
+	<div class="whole">
+	<div class="type">
+		<p>Mini Unipack</p>
+		</div>
+	<div class="plan">
+
+		<div class="header">
+			<span>€</span>3<sup>99</sup>
+		</div>
+		<div class="content">
+			<ul>
+				<li>50 Unipoints🏆</li>
+				
+			</ul>
+
+		</div>
+		
+		<div class="price">
+      <a href="#" class="bottom"><p class="cart">Add to cart</p></a>
+		</div>
+	</div>
+</div>
+	<div class="whole">
+		<div class="type standard">
+		<p>Standard Unipack</p>
+		</div>
+	<div class="plan">
+
+		<div class="header">
+			<span>€</span>7<sup>99</sup>
+		</div>
+		<div class="content">
+			<ul>
+				<li>120 Unipoints🏆</li>
+				<li>1 FREE Coupon</li>
+			</ul>
+		</div>
+		<div class="price">
+			<a href="#" class="bottom"><p class="cart">Add to cart</p></a>
+		</div>
+	</div>
+</div>
+
+	<div class="whole ">
+		<div class="type ultimate">
+		<p>Ultimate Unipack</p>
+		</div>
+	<div class="plan">
+
+		<div class="header">
+			<span>€</span>14<sup>99</sup>
+		</div>
+		<div class="content">
+			<ul>
+				<li>250 Unipoints🏆</li>
+				<li>1 FREE Coupon</li>
+				<li>1 FREE Profile View</li>
+			</ul>
+		</div>
+		<div class="price">
+      <a href="#" class="bottom"><p class="cart">Add to cart</p<</a>
+		</div>
+	</div>
+</div>
+    
+    
+
+
+</body>
+</html>
